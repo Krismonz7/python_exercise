@@ -1,14 +1,17 @@
-#Ejercisios
-numero = int(input("Numero: "))
-sumatorio = 0
+matriz = [[8,  7,  0],[34, 2, -1],[5, -5, 12]]
 # Completa el ejercicio aquí
-counter = 0
-size = range(numero)
-for num in size:
+
+#Recorremos las listas
+for lista in matriz:
     
-    if num%5 == 0 or num%7 == 0:
-        print("cumtiplo de 5 o 7")
-    else:
-        sumatorio += counter
-    counter +=1
-print(sumatorio)
+#Reorremos los elementos de la lista
+    for elemento in lista:
+        
+        if elemento%2 == 0:
+            
+            
+            posicion = lista.index(elemento)
+            lista[posicion] = 0 
+        else:
+            posicion = lista.index(elemento)
+            lista[posicion] = 1
