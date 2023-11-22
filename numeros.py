@@ -1,17 +1,10 @@
-matriz = [[8,  7,  0],[34, 2, -1],[5, -5, 12]]
-# Completa el ejercicio aquí
+# Programa para almacenar la suma de todos los numeros del 1 al 100
+rango =  list(range(1,100,1))
+suma = 0
+for numero in rango:
 
-#Recorremos las listas
-for lista in matriz:
-    
-#Reorremos los elementos de la lista
-    for elemento in lista:
-        
-        if elemento%2 == 0:
-            
-            
-            posicion = lista.index(elemento)
-            lista[posicion] = 0 
-        else:
-            posicion = lista.index(elemento)
-            lista[posicion] = 1
+    suma += numero
+    if numero%10 == 0:
+        print(numero)
+
+print("La suma total es de : ",suma)
